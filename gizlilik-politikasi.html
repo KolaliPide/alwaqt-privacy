@@ -13,7 +13,9 @@
   .lang-nav a:hover{text-decoration:underline}
   section{margin-bottom:48px;padding-bottom:8px}
   hr{border:none;border-top:1px solid #DDD0BC;margin:40px 0}
-  .ar{direction:rtl;text-align:right;font-family:'Traditional Arabic','Amiri',Georgia,serif}
+  .rtl{direction:rtl;text-align:right}
+  .ar{font-family:'Traditional Arabic','Amiri',Georgia,serif}
+  .ur{font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Traditional Arabic',Georgia,serif}
   footer{margin-top:40px;padding-top:16px;border-top:1px solid #ddd;font-size:13px;color:#888}
   a{color:#7D5C28}
 </style>
@@ -21,32 +23,38 @@
 <body>
 
 <div class="lang-nav">
-  🌐 <a href="#en">English</a> · <a href="#tr">Türkçe</a> · <a href="#id">Bahasa Indonesia</a> · <a href="#ar">العربية</a>
+  🌐 <a href="#en">English</a> · <a href="#tr">Türkçe</a> · <a href="#id">Bahasa Indonesia</a> · <a href="#ar">العربية</a> · <a href="#ur">اردو</a>
 </div>
 
 <section id="en" lang="en">
 <h1>🕌 AL WAQT — Privacy Policy</h1>
-<p><strong>Last updated:</strong> June 2026</p>
+<p><strong>Last updated:</strong> July 2026</p>
 
-<h2>1. Data We Process</h2>
-<p>AL WAQT uses your <strong>approximate location</strong> to calculate prayer times and the Qibla direction. Location data is processed on your device; coordinates are sent anonymously to the AlAdhan API (aladhan.com) for prayer times and to the Open-Meteo API (open-meteo.com) for weather. They are never linked to your identity and are not stored by us.</p>
+<h2>1. Location</h2>
+<p>AL WAQT uses your <strong>approximate location</strong> to calculate prayer times and the Qibla direction, to show the weather, and to display your city/district name. Coordinates are processed on your device; they are sent anonymously to the AlAdhan API (aladhan.com) for prayer times and to the Open-Meteo API (open-meteo.com) for weather. To display your city/district name, coordinates may be resolved by your device's built-in geocoding service (provided by Google). Your location is <strong>never stored on our servers</strong> — we do not operate any server that stores user data — and is never linked to your identity.</p>
 
 <h2>2. Data Stored on Your Device</h2>
-<p>Your name, prayer tracking, dhikr counters, favorites, and downloaded Quran content are stored <strong>only on your device</strong> and are never uploaded to any server. Deleting the app deletes all of this data.</p>
+<p>The following are stored <strong>only on your device</strong>: your language, theme, font size and adhan style choices; prayer tracking records; dhikr counters and favorites; your Prayer Journal (Dua Notebook) entries; downloaded Quran content; your name (if you enter one) and other app preferences. There is no account system and no server of ours — none of this data is uploaded anywhere. Deleting the app deletes all of it.</p>
 
-<h2>3. Advertising (Google AdMob)</h2>
-<p>The app displays ads through Google AdMob, which may collect device identifiers (advertising ID) and usage data to serve ads. Users in the European Economic Area are asked for consent regarding ad personalization. For details, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<h2>3. Content Providers</h2>
+<p>Quran texts and translations may be downloaded from content sources such as api.acikkuran.com and api.alquran.cloud. These requests contain only content parameters (such as surah, verse, or language) — no personal or account information is sent. Adhan previews normally play from audio files bundled inside the app; an external audio source may be used as a fallback if needed.</p>
 
-<h2>4. Analytics &amp; Crash Reporting (Google Firebase)</h2>
-<p>To understand how the app is used and to fix problems, AL WAQT uses <strong>Google Firebase Analytics</strong> and <strong>Crashlytics</strong>. These services collect pseudonymous data such as app interactions (screen views, feature usage), device and app information (device model, operating system, app version, language), an approximate region derived from your IP address, and a randomly generated app-instance identifier. When the app crashes, diagnostic crash logs and stack traces are also collected. This data is <strong>not linked to your name</strong> and is used only to improve the app's stability and user experience; it is never sold. You can reset or limit your advertising ID in your device settings. For details, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a>.</p>
+<h2>4. Advertising (Google AdMob)</h2>
+<p>The app displays ads through Google AdMob, which may process device identifiers (advertising ID) and usage signals to serve ads. Users in the European Economic Area are asked for consent regarding ad personalization. You can reset your advertising ID or manage personalized-ad settings in your device settings. Google's own privacy policy applies — see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-<h2>5. Notifications</h2>
-<p>Adhan and prayer-time notifications are scheduled entirely on your device; no server-side push infrastructure is used.</p>
+<h2>5. Analytics &amp; Crash Reporting (Google Firebase)</h2>
+<p>AL WAQT uses <strong>Google Firebase Analytics</strong> for anonymous screen/interaction statistics and <strong>Crashlytics</strong> for crash logs and diagnostics. Collected data includes app interactions (screen views, feature usage), device and app information (model, operating system, app version, language), an approximate region derived from your IP address, and a randomly generated app-instance identifier. This data is used only to improve the app's quality and stability; it is <strong>not used to build a personal profile of you</strong>, is not linked to your name, and is <strong>never sold</strong>. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a>.</p>
 
-<h2>6. Children's Privacy</h2>
-<p>The app does not knowingly collect personal data and is suitable for all ages; no data is knowingly collected from children under 13.</p>
+<h2>6. Notifications</h2>
+<p>Adhan and prayer-time notifications are scheduled entirely on your device; no server-side push infrastructure (such as FCM remote push) is used. You control the notification permission from your device settings.</p>
 
-<h2>7. Contact</h2>
+<h2>7. Your Rights, Deletion &amp; Retention</h2>
+<p>Deleting the app deletes all locally stored data on your device. For data processed by third-party services (Google Firebase, AdMob), the retention and deletion policies of those services apply. For any privacy request, you can contact us at <strong>alwaqtsupport@gmail.com</strong>.</p>
+
+<h2>8. Children's Privacy</h2>
+<p>The app does not knowingly collect personal data from children under 13. It is a general-audience app and is not designed for or directed at children.</p>
+
+<h2>9. Contact</h2>
 <p>For any questions: <strong>alwaqtsupport@gmail.com</strong></p>
 </section>
 
@@ -54,27 +62,33 @@
 
 <section id="tr" lang="tr">
 <h1>🕌 AL WAQT — Gizlilik Politikası</h1>
-<p><strong>Son güncelleme:</strong> Haziran 2026</p>
+<p><strong>Son güncelleme:</strong> Temmuz 2026</p>
 
-<h2>1. İşlenen Veriler</h2>
-<p>AL WAQT, namaz vakitlerini ve kıble yönünü hesaplamak için <strong>yaklaşık konumunuzu</strong> kullanır. Konum verisi cihazınızda işlenir; koordinatlar vakit hesabı için AlAdhan API'sine (aladhan.com), hava durumu için Open-Meteo API'sine (open-meteo.com) anonim olarak gönderilir. Kimliğinizle ilişkilendirilmez ve tarafımızca saklanmaz.</p>
+<h2>1. Konum</h2>
+<p>AL WAQT, namaz vakitlerini ve kıble yönünü hesaplamak, hava durumunu göstermek ve şehir/semt adınızı görüntülemek için <strong>yaklaşık konumunuzu</strong> kullanır. Koordinatlar cihazınızda işlenir; vakit hesabı için AlAdhan API'sine (aladhan.com), hava durumu için Open-Meteo API'sine (open-meteo.com) anonim olarak gönderilir. Şehir/semt adını göstermek için koordinatlar cihazınızın yerleşik geocoding servisi (Google) ile çözümlenebilir. Konumunuz <strong>bizim sunucumuzda saklanmaz</strong> — kullanıcı verisi saklayan bir sunucumuz yoktur — ve kimliğinizle ilişkilendirilmez.</p>
 
 <h2>2. Cihazda Saklanan Veriler</h2>
-<p>Adınız, namaz takibi, zikir sayaçları, favoriler ve indirilen Kur'an içeriği <strong>yalnızca cihazınızda</strong> saklanır; hiçbir sunucuya gönderilmez. Uygulamayı silerseniz tüm bu veriler silinir.</p>
+<p>Şunlar <strong>yalnızca cihazınızda</strong> saklanır: dil, tema, yazı boyutu ve ezan stili tercihleriniz; namaz takip kayıtlarınız; zikir sayaçları ve favorileriniz; Dua Defteri kayıtlarınız; indirilen Kur'an içerikleri; (girdiyseniz) adınız ve diğer uygulama tercihleri. Hesap sistemi ve bize ait bir sunucu olmadığı için bu verilerin hiçbiri hiçbir yere yüklenmez. Uygulamayı silmek bu verilerin tamamını siler.</p>
 
-<h2>3. Reklamlar (Google AdMob)</h2>
-<p>Uygulama, Google AdMob aracılığıyla reklam gösterir. AdMob, reklam sunmak için cihaz tanımlayıcıları (reklam kimliği) ve kullanım verileri toplayabilir. Avrupa Ekonomik Alanı'ndaki kullanıcılardan reklam kişiselleştirmesi için onay istenir. Ayrıntılar için: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</p>
+<h2>3. İçerik Sunucuları</h2>
+<p>Kur'an metin ve mealleri api.acikkuran.com ve api.alquran.cloud gibi içerik kaynaklarından indirilebilir. Bu isteklerde yalnızca içerik parametreleri (sure, ayet, dil gibi) bulunur; kişisel veya hesap bilgisi gönderilmez. Ezan önizlemeleri normalde uygulama içindeki yerel ses dosyalarından çalınır; gerektiğinde harici bir ses kaynağı yedek olarak kullanılabilir.</p>
 
-<h2>4. Analitik ve Çökme Raporlama (Google Firebase)</h2>
-<p>Uygulamanın nasıl kullanıldığını anlamak ve sorunları gidermek için AL WAQT, <strong>Google Firebase Analytics</strong> ve <strong>Crashlytics</strong> hizmetlerini kullanır. Bu hizmetler; uygulama içi etkileşimler (ekran görüntülemeleri, özellik kullanımı), cihaz ve uygulama bilgileri (cihaz modeli, işletim sistemi, uygulama sürümü, dil), IP adresinizden türetilen yaklaşık bölge ve rastgele oluşturulmuş bir uygulama-örnek tanımlayıcısı toplar. Uygulama çöktüğünde ayrıca tanılama amaçlı çökme günlükleri ve yığın izleri toplanır. Bu veriler <strong>adınızla ilişkilendirilmez</strong>, yalnızca uygulamanın kararlılığını ve kullanıcı deneyimini iyileştirmek için kullanılır ve hiçbir zaman satılmaz. Reklam kimliğinizi cihaz ayarlarınızdan sıfırlayabilir veya sınırlayabilirsiniz. Ayrıntılar için: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://firebase.google.com/support/privacy">Firebase Gizlilik ve Güvenlik</a>.</p>
+<h2>4. Reklamlar (Google AdMob)</h2>
+<p>Uygulama, Google AdMob aracılığıyla reklam gösterir. AdMob, reklam sunmak için cihaz tanımlayıcılarını (reklam kimliği) ve kullanım sinyallerini işleyebilir. Avrupa Ekonomik Alanı'ndaki kullanıcılardan reklam kişiselleştirmesi için onay istenir. Reklam kimliğinizi cihaz ayarlarınızdan sıfırlayabilir veya kişiselleştirilmiş reklam ayarlarını yönetebilirsiniz. Google'ın kendi gizlilik politikası geçerlidir: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</p>
 
-<h2>5. Bildirimler</h2>
-<p>Ezan ve namaz vakti bildirimleri tamamen cihaz üzerinde zamanlanır; sunucu tarafı bildirim altyapısı kullanılmaz.</p>
+<h2>5. Analitik ve Çökme Raporlama (Google Firebase)</h2>
+<p>AL WAQT, anonim ekran/etkileşim istatistikleri için <strong>Google Firebase Analytics</strong>, çökme günlükleri ve tanılama için <strong>Crashlytics</strong> kullanır. Toplananlar: uygulama içi etkileşimler (ekran görüntülemeleri, özellik kullanımı), cihaz ve uygulama bilgileri (model, işletim sistemi, uygulama sürümü, dil), IP adresinizden türetilen yaklaşık bölge ve rastgele oluşturulmuş bir uygulama-örnek tanımlayıcısı. Bu veriler yalnızca uygulamanın kalitesini ve kararlılığını artırmak için kullanılır; <strong>kişisel bir profil oluşturmak için kullanılmaz</strong>, adınızla ilişkilendirilmez ve <strong>hiçbir zaman satılmaz</strong>. Ayrıntılar: <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://firebase.google.com/support/privacy">Firebase Gizlilik ve Güvenlik</a>.</p>
 
-<h2>6. Çocukların Gizliliği</h2>
-<p>Uygulama bilerek kişisel veri toplamaz ve her yaş grubuna uygundur; 13 yaş altı çocuklardan bilerek veri toplanmaz.</p>
+<h2>6. Bildirimler</h2>
+<p>Ezan ve namaz vakti bildirimleri tamamen cihaz üzerinde zamanlanır; sunucu tarafı bildirim altyapısı (FCM/uzaktan push) kullanılmaz. Bildirim iznini cihaz ayarlarınızdan yönetirsiniz.</p>
 
-<h2>7. İletişim</h2>
+<h2>7. Haklarınız, Silme ve Saklama</h2>
+<p>Uygulamayı silmek, cihazdaki tüm yerel verileri siler. Üçüncü taraf servislerin (Google Firebase, AdMob) işlediği veriler için ilgili servislerin saklama ve silme politikaları geçerlidir. Gizlilik talepleriniz için <strong>alwaqtsupport@gmail.com</strong> adresinden bize ulaşabilirsiniz.</p>
+
+<h2>8. Çocukların Gizliliği</h2>
+<p>Uygulama, 13 yaş altı çocuklardan bilerek kişisel veri toplamaz. Genel kitleye yönelik bir uygulamadır; çocuklara özel tasarlanmamıştır.</p>
+
+<h2>9. İletişim</h2>
 <p>Sorularınız için: <strong>alwaqtsupport@gmail.com</strong></p>
 </section>
 
@@ -82,56 +96,102 @@
 
 <section id="id" lang="id">
 <h1>🕌 AL WAQT — Kebijakan Privasi</h1>
-<p><strong>Terakhir diperbarui:</strong> Juni 2026</p>
+<p><strong>Terakhir diperbarui:</strong> Juli 2026</p>
 
-<h2>1. Data yang Kami Proses</h2>
-<p>AL WAQT menggunakan <strong>lokasi perkiraan</strong> Anda untuk menghitung waktu salat dan arah kiblat. Data lokasi diproses di perangkat Anda; koordinat dikirim secara anonim ke API AlAdhan (aladhan.com) untuk waktu salat dan ke API Open-Meteo (open-meteo.com) untuk cuaca. Data ini tidak pernah dikaitkan dengan identitas Anda dan tidak kami simpan.</p>
+<h2>1. Lokasi</h2>
+<p>AL WAQT menggunakan <strong>lokasi perkiraan</strong> Anda untuk menghitung waktu salat dan arah kiblat, menampilkan cuaca, serta menampilkan nama kota/wilayah Anda. Koordinat diproses di perangkat Anda; dikirim secara anonim ke API AlAdhan (aladhan.com) untuk waktu salat dan ke API Open-Meteo (open-meteo.com) untuk cuaca. Untuk menampilkan nama kota/wilayah, koordinat dapat diselesaikan oleh layanan geocoding bawaan perangkat Anda (disediakan oleh Google). Lokasi Anda <strong>tidak pernah disimpan di server kami</strong> — kami tidak mengoperasikan server penyimpan data pengguna — dan tidak pernah dikaitkan dengan identitas Anda.</p>
 
 <h2>2. Data yang Disimpan di Perangkat Anda</h2>
-<p>Nama Anda, pelacakan salat, penghitung zikir, favorit, dan konten Al-Qur'an yang diunduh disimpan <strong>hanya di perangkat Anda</strong> dan tidak pernah diunggah ke server mana pun. Menghapus aplikasi akan menghapus semua data ini.</p>
+<p>Berikut ini disimpan <strong>hanya di perangkat Anda</strong>: pilihan bahasa, tema, ukuran huruf, dan gaya azan; catatan pelacakan salat; penghitung zikir dan favorit; catatan Buku Doa Anda; konten Al-Qur'an yang diunduh; nama Anda (jika diisi) dan preferensi aplikasi lainnya. Tidak ada sistem akun dan tidak ada server milik kami — tidak ada data ini yang diunggah ke mana pun. Menghapus aplikasi akan menghapus semuanya.</p>
 
-<h2>3. Iklan (Google AdMob)</h2>
-<p>Aplikasi menampilkan iklan melalui Google AdMob, yang dapat mengumpulkan pengenal perangkat (ID iklan) dan data penggunaan untuk menayangkan iklan. Pengguna di Kawasan Ekonomi Eropa dimintai persetujuan terkait personalisasi iklan. Untuk detail, lihat <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a>.</p>
+<h2>3. Penyedia Konten</h2>
+<p>Teks dan terjemahan Al-Qur'an dapat diunduh dari sumber konten seperti api.acikkuran.com dan api.alquran.cloud. Permintaan ini hanya berisi parameter konten (seperti surah, ayat, atau bahasa) — tidak ada informasi pribadi atau akun yang dikirim. Pratinjau azan biasanya diputar dari berkas audio bawaan aplikasi; sumber audio eksternal dapat digunakan sebagai cadangan bila diperlukan.</p>
 
-<h2>4. Analitik &amp; Pelaporan Kerusakan (Google Firebase)</h2>
-<p>Untuk memahami cara aplikasi digunakan dan memperbaiki masalah, AL WAQT menggunakan <strong>Google Firebase Analytics</strong> dan <strong>Crashlytics</strong>. Layanan ini mengumpulkan data pseudonim seperti interaksi dalam aplikasi (tampilan layar, penggunaan fitur), informasi perangkat dan aplikasi (model perangkat, sistem operasi, versi aplikasi, bahasa), wilayah perkiraan yang berasal dari alamat IP Anda, dan pengenal instans-aplikasi yang dibuat secara acak. Saat aplikasi mengalami kerusakan, log kerusakan dan stack trace untuk diagnostik juga dikumpulkan. Data ini <strong>tidak dikaitkan dengan nama Anda</strong> dan hanya digunakan untuk meningkatkan stabilitas serta pengalaman pengguna aplikasi; data ini tidak pernah dijual. Anda dapat menyetel ulang atau membatasi ID iklan Anda di pengaturan perangkat. Untuk detail, lihat <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a> dan <a href="https://firebase.google.com/support/privacy">Privasi &amp; Keamanan Firebase</a>.</p>
+<h2>4. Iklan (Google AdMob)</h2>
+<p>Aplikasi menampilkan iklan melalui Google AdMob, yang dapat memproses pengenal perangkat (ID iklan) dan sinyal penggunaan untuk menayangkan iklan. Pengguna di Kawasan Ekonomi Eropa dimintai persetujuan terkait personalisasi iklan. Anda dapat menyetel ulang ID iklan atau mengelola pengaturan iklan yang dipersonalisasi di pengaturan perangkat. Kebijakan privasi Google berlaku: <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a>.</p>
 
-<h2>5. Notifikasi</h2>
-<p>Notifikasi azan dan waktu salat dijadwalkan sepenuhnya di perangkat Anda; tidak ada infrastruktur push sisi server yang digunakan.</p>
+<h2>5. Analitik &amp; Pelaporan Kerusakan (Google Firebase)</h2>
+<p>AL WAQT menggunakan <strong>Google Firebase Analytics</strong> untuk statistik layar/interaksi anonim dan <strong>Crashlytics</strong> untuk log kerusakan serta diagnostik. Data yang dikumpulkan meliputi interaksi dalam aplikasi (tampilan layar, penggunaan fitur), informasi perangkat dan aplikasi (model, sistem operasi, versi aplikasi, bahasa), wilayah perkiraan dari alamat IP Anda, dan pengenal instans-aplikasi yang dibuat secara acak. Data ini hanya digunakan untuk meningkatkan kualitas dan stabilitas aplikasi; <strong>tidak digunakan untuk membuat profil pribadi Anda</strong>, tidak dikaitkan dengan nama Anda, dan <strong>tidak pernah dijual</strong>. Lihat <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a> dan <a href="https://firebase.google.com/support/privacy">Privasi &amp; Keamanan Firebase</a>.</p>
 
-<h2>6. Privasi Anak</h2>
-<p>Aplikasi tidak dengan sengaja mengumpulkan data pribadi dan cocok untuk segala usia; tidak ada data yang dengan sengaja dikumpulkan dari anak-anak di bawah 13 tahun.</p>
+<h2>6. Notifikasi</h2>
+<p>Notifikasi azan dan waktu salat dijadwalkan sepenuhnya di perangkat Anda; tidak ada infrastruktur push sisi server (seperti push jarak jauh FCM) yang digunakan. Anda mengelola izin notifikasi dari pengaturan perangkat.</p>
 
-<h2>7. Kontak</h2>
+<h2>7. Hak Anda, Penghapusan &amp; Penyimpanan</h2>
+<p>Menghapus aplikasi akan menghapus semua data lokal di perangkat Anda. Untuk data yang diproses layanan pihak ketiga (Google Firebase, AdMob), kebijakan penyimpanan dan penghapusan layanan tersebut yang berlaku. Untuk permintaan privasi apa pun, hubungi kami di <strong>alwaqtsupport@gmail.com</strong>.</p>
+
+<h2>8. Privasi Anak</h2>
+<p>Aplikasi tidak dengan sengaja mengumpulkan data pribadi dari anak di bawah 13 tahun. Ini adalah aplikasi untuk khalayak umum dan tidak dirancang khusus untuk anak-anak.</p>
+
+<h2>9. Kontak</h2>
 <p>Untuk pertanyaan apa pun: <strong>alwaqtsupport@gmail.com</strong></p>
 </section>
 
 <hr>
 
-<section id="ar" lang="ar" class="ar">
+<section id="ar" lang="ar" class="rtl ar">
 <h1>🕌 الوقت — سياسة الخصوصية</h1>
-<p><strong>آخر تحديث:</strong> يونيو 2026</p>
+<p><strong>آخر تحديث:</strong> يوليو 2026</p>
 
-<h2>١. البيانات التي نعالجها</h2>
-<p>يستخدم تطبيق «الوقت» <strong>موقعك التقريبي</strong> لحساب أوقات الصلاة واتجاه القبلة. تتم معالجة بيانات الموقع على جهازك؛ وتُرسَل الإحداثيات بشكل مجهول إلى واجهة AlAdhan (aladhan.com) لحساب أوقات الصلاة، وإلى واجهة Open-Meteo (open-meteo.com) لبيانات الطقس. ولا تُربَط بهويتك ولا نقوم بتخزينها.</p>
+<h2>١. الموقع</h2>
+<p>يستخدم تطبيق «الوقت» <strong>موقعك التقريبي</strong> لحساب أوقات الصلاة واتجاه القبلة، وعرض حالة الطقس، وإظهار اسم مدينتك/منطقتك. تُعالَج الإحداثيات على جهازك؛ وتُرسَل بشكل مجهول إلى واجهة AlAdhan (aladhan.com) لأوقات الصلاة وإلى واجهة Open-Meteo (open-meteo.com) للطقس. ولإظهار اسم المدينة/المنطقة قد تُحلَّل الإحداثيات عبر خدمة تحديد المواقع الجغرافية المدمجة في جهازك (المقدَّمة من Google). موقعك <strong>لا يُخزَّن على خوادمنا أبدًا</strong> — فليس لدينا أي خادم يخزّن بيانات المستخدمين — ولا يُربَط بهويتك.</p>
 
 <h2>٢. البيانات المخزَّنة على جهازك</h2>
-<p>يُخزَّن اسمك، ومتابعة الصلاة، وعدّادات الذكر، والمفضّلة، ومحتوى القرآن المُنزَّل <strong>على جهازك فقط</strong>، ولا تُرفَع إلى أي خادم. وعند حذف التطبيق تُحذَف جميع هذه البيانات.</p>
+<p>تُخزَّن العناصر التالية <strong>على جهازك فقط</strong>: اختيارات اللغة والمظهر وحجم الخط ونمط الأذان؛ وسجلّات متابعة الصلاة؛ وعدّادات الذكر والمفضّلة؛ ومدوّنات دفتر الدعاء؛ ومحتوى القرآن المُنزَّل؛ واسمك (إن أدخلته) وسائر تفضيلات التطبيق. لا يوجد نظام حسابات ولا خادم خاص بنا — فلا يُرفَع أي من هذه البيانات إلى أي مكان. وحذف التطبيق يحذفها جميعًا.</p>
 
-<h2>٣. الإعلانات (Google AdMob)</h2>
-<p>يعرض التطبيق إعلانات عبر Google AdMob، التي قد تجمع معرّفات الجهاز (معرّف الإعلان) وبيانات الاستخدام لعرض الإعلانات. ويُطلَب من المستخدمين في المنطقة الاقتصادية الأوروبية الموافقة على تخصيص الإعلانات. للمزيد، راجع <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</p>
+<h2>٣. مزوّدو المحتوى</h2>
+<p>قد تُنزَّل نصوص القرآن وترجماته من مصادر محتوى مثل api.acikkuran.com و api.alquran.cloud. لا تتضمن هذه الطلبات سوى معطيات المحتوى (كالسورة أو الآية أو اللغة) — ولا تُرسَل أي معلومات شخصية أو معلومات حساب. وتُشغَّل معاينات الأذان عادةً من ملفات صوتية داخل التطبيق؛ وقد يُستخدَم مصدر صوتي خارجي كاحتياط عند الحاجة.</p>
 
-<h2>٤. التحليلات وتقارير الأعطال (Google Firebase)</h2>
-<p>لفهم كيفية استخدام التطبيق وإصلاح المشكلات، يستخدم «الوقت» خدمتَي <strong>Google Firebase Analytics</strong> و<strong>Crashlytics</strong>. تجمع هاتان الخدمتان بيانات مجهولة الهوية مثل التفاعلات داخل التطبيق (مشاهدات الشاشات، استخدام الميزات)، ومعلومات الجهاز والتطبيق (طراز الجهاز، نظام التشغيل، إصدار التطبيق، اللغة)، ومنطقة تقريبية مُستنتَجة من عنوان IP الخاص بك، ومُعرّفًا عشوائيًا لنسخة التطبيق. وعند تعطّل التطبيق تُجمَع أيضًا سجلات الأعطال وتتبّع المكدّس لأغراض التشخيص. لا تُربَط هذه البيانات <strong>باسمك</strong>، وتُستخدَم فقط لتحسين استقرار التطبيق وتجربة المستخدم، ولا تُباع أبدًا. ويمكنك إعادة تعيين معرّف الإعلان أو الحدّ منه من إعدادات جهازك. للمزيد، راجع <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a> و<a href="https://firebase.google.com/support/privacy">خصوصية وأمان Firebase</a>.</p>
+<h2>٤. الإعلانات (Google AdMob)</h2>
+<p>يعرض التطبيق إعلانات عبر Google AdMob، التي قد تعالج معرّفات الجهاز (معرّف الإعلان) وإشارات الاستخدام لعرض الإعلانات. ويُطلَب من المستخدمين في المنطقة الاقتصادية الأوروبية الموافقة على تخصيص الإعلانات. يمكنك إعادة تعيين معرّف الإعلان أو إدارة إعدادات الإعلانات المخصّصة من إعدادات جهازك. وتسري سياسة خصوصية Google: <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</p>
 
-<h2>٥. الإشعارات</h2>
-<p>تُجدوَل إشعارات الأذان وأوقات الصلاة بالكامل على جهازك؛ ولا تُستخدَم أي بنية إشعارات من جانب الخادم.</p>
+<h2>٥. التحليلات وتقارير الأعطال (Google Firebase)</h2>
+<p>يستخدم «الوقت» <strong>Google Firebase Analytics</strong> لإحصاءات مجهولة الهوية للشاشات والتفاعلات، و<strong>Crashlytics</strong> لسجلات الأعطال والتشخيص. تشمل البيانات المجموعة: التفاعلات داخل التطبيق (مشاهدات الشاشات، استخدام الميزات)، ومعلومات الجهاز والتطبيق (الطراز، نظام التشغيل، إصدار التطبيق، اللغة)، ومنطقة تقريبية مُستنتَجة من عنوان IP، ومعرّفًا عشوائيًا لنسخة التطبيق. تُستخدَم هذه البيانات لتحسين جودة التطبيق واستقراره فقط؛ <strong>ولا تُستخدَم لإنشاء ملف شخصي عنك</strong>، ولا تُربَط باسمك، <strong>ولا تُباع أبدًا</strong>. راجع <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a> و<a href="https://firebase.google.com/support/privacy">خصوصية وأمان Firebase</a>.</p>
 
-<h2>٦. خصوصية الأطفال</h2>
-<p>لا يجمع التطبيق بيانات شخصية عن قصد، وهو مناسب لجميع الأعمار؛ ولا تُجمَع أي بيانات عن قصد من الأطفال دون سن الثالثة عشرة.</p>
+<h2>٦. الإشعارات</h2>
+<p>تُجدوَل إشعارات الأذان وأوقات الصلاة بالكامل على جهازك؛ ولا تُستخدَم أي بنية إشعارات من جانب الخادم (مثل الدفع عن بُعد FCM). وأنت تتحكم بإذن الإشعارات من إعدادات جهازك.</p>
 
-<h2>٧. التواصل</h2>
+<h2>٧. حقوقك والحذف والاحتفاظ</h2>
+<p>حذف التطبيق يحذف جميع البيانات المحلية على جهازك. أما البيانات التي تعالجها خدمات الطرف الثالث (Google Firebase وAdMob) فتسري عليها سياسات الاحتفاظ والحذف الخاصة بتلك الخدمات. ولأي طلب متعلق بالخصوصية يمكنك مراسلتنا على <strong>alwaqtsupport@gmail.com</strong>.</p>
+
+<h2>٨. خصوصية الأطفال</h2>
+<p>لا يجمع التطبيق عن قصد بيانات شخصية من الأطفال دون سن الثالثة عشرة. وهو تطبيق موجَّه للجمهور العام وليس مصمَّمًا للأطفال.</p>
+
+<h2>٩. التواصل</h2>
 <p>لأي استفسارات: <strong>alwaqtsupport@gmail.com</strong></p>
+</section>
+
+<hr>
+
+<section id="ur" lang="ur" class="rtl ur">
+<h1>🕌 الوقت (AL WAQT) — رازداری کی پالیسی</h1>
+<p><strong>آخری تازہ کاری:</strong> جولائی 2026</p>
+
+<h2>۱۔ مقام</h2>
+<p>AL WAQT آپ کا <strong>تخمینی مقام</strong> نماز کے اوقات اور قبلہ کی سمت نکالنے، موسم دکھانے اور آپ کے شہر/علاقے کا نام دکھانے کے لیے استعمال کرتا ہے۔ کوآرڈینیٹس آپ کے فون میں پروسیس ہوتے ہیں؛ نماز کے اوقات کے لیے AlAdhan API (aladhan.com) اور موسم کے لیے Open-Meteo API (open-meteo.com) کو گمنام طور پر بھیجے جاتے ہیں۔ شہر/علاقے کا نام دکھانے کے لیے کوآرڈینیٹس آپ کے فون کی built-in جیوکوڈنگ سروس (Google) سے حل کیے جا سکتے ہیں۔ آپ کا مقام <strong>ہمارے کسی سرور پر محفوظ نہیں ہوتا</strong> — ہمارے پاس صارف ڈیٹا رکھنے والا کوئی سرور نہیں — اور یہ آپ کی شناخت سے نہیں جوڑا جاتا۔</p>
+
+<h2>۲۔ آپ کے فون میں محفوظ ڈیٹا</h2>
+<p>یہ سب <strong>صرف آپ کے فون میں</strong> محفوظ رہتا ہے: زبان، تھیم، حروف کا سائز اور اذان کے انداز کی ترجیحات؛ نماز کے ریکارڈ؛ ذکر کے شمار اور پسندیدہ؛ دعا کی ڈائری کی تحریریں؛ ڈاؤن لوڈ شدہ قرآنی مواد؛ آپ کا نام (اگر درج کریں) اور دیگر ایپ ترجیحات۔ کوئی اکاؤنٹ سسٹم اور ہمارا کوئی سرور نہیں — یہ ڈیٹا کہیں اپ لوڈ نہیں ہوتا۔ ایپ حذف کرنے سے یہ سب حذف ہو جاتا ہے۔</p>
+
+<h2>۳۔ مواد فراہم کرنے والے</h2>
+<p>قرآنی متون اور تراجم api.acikkuran.com اور api.alquran.cloud جیسے مواد کے ذرائع سے ڈاؤن لوڈ ہو سکتے ہیں۔ ان درخواستوں میں صرف مواد کے پیرامیٹر (سورہ، آیت، زبان وغیرہ) ہوتے ہیں — کوئی ذاتی یا اکاؤنٹ معلومات نہیں بھیجی جاتی۔ اذان کی جھلکیاں عام طور پر ایپ کے اندر موجود آڈیو فائلوں سے چلتی ہیں؛ ضرورت پڑنے پر بیرونی آڈیو ذریعہ بطور متبادل استعمال ہو سکتا ہے۔</p>
+
+<h2>۴۔ اشتہارات (Google AdMob)</h2>
+<p>ایپ Google AdMob کے ذریعے اشتہارات دکھاتی ہے، جو اشتہار دکھانے کے لیے ڈیوائس شناخت کنندگان (ایڈورٹائزنگ ID) اور استعمال کے اشارے پروسیس کر سکتی ہے۔ یورپی اقتصادی علاقے کے صارفین سے اشتہاری شخصی سازی کی اجازت مانگی جاتی ہے۔ آپ فون کی ترتیبات سے اپنی ایڈورٹائزنگ ID ری سیٹ کر سکتے ہیں یا شخصی اشتہارات کی ترتیبات سنبھال سکتے ہیں۔ Google کی اپنی رازداری پالیسی لاگو ہوتی ہے: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>۵۔ تجزیات اور کریش رپورٹنگ (Google Firebase)</h2>
+<p>AL WAQT گمنام اسکرین/تعامل کے اعداد و شمار کے لیے <strong>Google Firebase Analytics</strong> اور کریش لاگز و تشخیص کے لیے <strong>Crashlytics</strong> استعمال کرتا ہے۔ جمع ہونے والے ڈیٹا میں شامل ہیں: ایپ کے اندر تعاملات (اسکرین ویوز، فیچر کا استعمال)، ڈیوائس اور ایپ کی معلومات (ماڈل، آپریٹنگ سسٹم، ایپ ورژن، زبان)، آپ کے IP سے اخذ کردہ تخمینی علاقہ، اور بے ترتیب بنایا گیا ایپ-انسٹینس شناخت کنندہ۔ یہ ڈیٹا صرف ایپ کے معیار اور استحکام کو بہتر بنانے کے لیے استعمال ہوتا ہے؛ <strong>آپ کا ذاتی پروفائل بنانے کے لیے استعمال نہیں ہوتا</strong>، آپ کے نام سے نہیں جوڑا جاتا اور <strong>کبھی فروخت نہیں ہوتا</strong>۔ دیکھیں: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> اور <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a>.</p>
+
+<h2>۶۔ اطلاعات</h2>
+<p>اذان اور نماز کے اوقات کی اطلاعات مکمل طور پر آپ کے فون پر شیڈول ہوتی ہیں؛ سرور کی جانب سے کوئی push انفراسٹرکچر (جیسے FCM ریموٹ push) استعمال نہیں ہوتا۔ اطلاع کی اجازت آپ فون کی ترتیبات سے سنبھالتے ہیں۔</p>
+
+<h2>۷۔ آپ کے حقوق، حذف اور ذخیرہ</h2>
+<p>ایپ حذف کرنے سے فون کا تمام مقامی ڈیٹا حذف ہو جاتا ہے۔ فریقِ ثالث سروسز (Google Firebase، AdMob) کے پروسیس کردہ ڈیٹا پر انہی سروسز کی ذخیرہ اور حذف کی پالیسیاں لاگو ہوتی ہیں۔ رازداری سے متعلق کسی بھی درخواست کے لیے ہم سے رابطہ کریں: <strong>alwaqtsupport@gmail.com</strong>.</p>
+
+<h2>۸۔ بچوں کی رازداری</h2>
+<p>ایپ 13 سال سے کم عمر بچوں سے جان بوجھ کر ذاتی ڈیٹا جمع نہیں کرتی۔ یہ عام صارفین کے لیے ہے اور خاص طور پر بچوں کے لیے ڈیزائن نہیں کی گئی۔</p>
+
+<h2>۹۔ رابطہ</h2>
+<p>کسی بھی سوال کے لیے: <strong>alwaqtsupport@gmail.com</strong></p>
 </section>
 
 <footer>© 2026 AL WAQT</footer>
